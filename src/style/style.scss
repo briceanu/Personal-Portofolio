@@ -1,0 +1,74 @@
+@use '_fonts' as *;
+@use '_sizes' as *;
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+//setting style to nav_bar
+nav {
+  background: linear-gradient(
+    to left,
+    rgb(73, 73, 207),
+    rgb(51, 51, 153),
+    rgb(46, 46, 155),
+    rgb(69, 69, 156),
+    rgb(60, 60, 129)
+  );
+  padding-block: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 4px 2px -2px gray;
+  & ul {
+    list-style: none;
+    font-weight: 400;
+    font-family: $font-title;
+    font-size: $font-bg;
+  }
+  & a {
+    text-decoration: none;
+    color: white;
+    transition: color 300ms linear, text-shadow 300ms ease-in-out;
+  }
+  .nav_bar ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 2rem;
+    padding-inline-start: 1rem;
+  }
+  & a:hover {
+    color: white;
+    text-shadow: 2px 2px 3px grey;
+  }
+
+  .btn_container {
+    width: 50px;
+    height: 25px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    border: 2px solid black;
+  }
+  .btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+  }
+  .btn_container {
+    margin-inline-end: 2rem;
+  }
+}
+.change_theme_dark {
+  .btn {
+    translate: 25px;
+    background-color: rgb(51, 36, 36);
+  }
+}
+// this si the end of nav_bar
+//beginning of the main
+main {
+  background-color: lime;
+}
