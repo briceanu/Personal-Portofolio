@@ -11,22 +11,25 @@
       <nav>
         <div class="nav_bar">
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#" id="about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-        </div>
-        <div class="toggle_btn">
-          <div class="btn_container">
-            <div class="btn"></div>
-          </div>
         </div>
       </nav>
     </header>
-    <main>
-      <section class="picture">
-        <h2>Briceanu Teodor</h2>
-        <img src="../src/assets/ceo_img/ceo_640.jpg" alt="" />
+    <section class="description">
+      <section class="hero">
+        <img
+          srcset="
+            ../src/assets/ceo_img/ceo_640.jpg   640w,
+            ../src/assets/ceo_img/ceo_1280.jpg 1280w,
+            ../src/assets/ceo_img/ceo_1920.jpg 1920w
+          "
+          sizes="(max-width:640px) 40vw, 100vw"
+          src="../src/assets/ceo_img/ceo_640.jpg"
+          alt="ceo of the company"
+        />
       </section>
       <section class="about">
         <h2>About</h2>
@@ -43,8 +46,210 @@
           porro expedita accusantium error. Odit aspernatur laborum facilis!
           Quae, vel!
         </p>
-        <img src="../src/assets/github.svg" alt="" />
+        <div class="svgs">
+          <img src="../src/assets/github.svg" alt="" />
+          <img src="../src/assets/linkedin.svg" alt="" />
+          <img src="../src/assets/fb.svg" alt="" />
+        </div>
       </section>
+    </section>
+    <h2 class="work" id="projects">My work</h2>
+    <main>
+      <div class="card">
+        <img
+          srcset="
+            ../src/assets/project/project_640.jpg   640w,
+            ../src/assets/project/project_1280.jpg 1280w,
+            ../src/assets/project/project_1920.jpg 1920w
+          "
+          sizes="(max-width:690px)100vw, 
+                (max-width:1060px) 50vw ,30vw "
+          alt="project work"
+        />
+
+        <div class="card_description">
+          <div class="container">
+            <h3>Word hard project</h3>
+            <div class="card_imgs">
+              <img src="../src/assets/github.svg" alt="" />
+              <img src="../src/assets/linkedin.svg" alt="" />
+              <img src="../src/assets/fb.svg" alt="" />
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          srcset="
+            ../src/assets/airbus/airbus_640.jpg   640w,
+            ../src/assets/airbus/airbus_1280.jpg 1280w,
+            ../src/assets/airbus/airbus_1920.jpg 1920w
+          "
+          sizes="(max-width:690px)100vw, 
+                (max-width:1060px) 50vw ,30vw "
+          src="../src/assets/airbus/airbus_640.jpg"
+          alt="project work"
+        />
+
+        <div class="card_description">
+          <div class="container">
+            <h3>High into the sky</h3>
+            <div class="card_imgs">
+              <img src="../src/assets/github.svg" alt="" />
+              <img src="../src/assets/linkedin.svg" alt="" />
+              <img src="../src/assets/fb.svg" alt="" />
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eum
+            fuga saepe?
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          srcset="
+            ../src/assets/frankfurt/frankfurt_640.jpg   640w,
+            ../src/assets/frankfurt/frankfurt_1280.jpg 1280w,
+            ../src/assets/frankfurt/frankfurt_1920.jpg 1920w
+          "
+          sizes="(max-width:690px)100vw, 
+                (max-width:1060px) 50vw ,30vw "
+          src="../src/assets/frankfurt/frankfurt_640.jpg"
+          alt="project work"
+        />
+
+        <div class="card_description">
+          <div class="container">
+            <h3>Town that never sleeps</h3>
+            <div class="card_imgs">
+              <img src="../src/assets/github.svg" alt="" />
+              <img src="../src/assets/linkedin.svg" alt="" />
+              <img src="../src/assets/fb.svg" alt="" />
+            </div>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perspiciatis obcaecati placeat dolor eius .
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          srcset="
+            ../src/assets/graffiti/graffiti_640.jpg   640w,
+            ../src/assets/graffiti/graffiti_1280.jpg 1280w,
+            ../src/assets/graffiti/graffiti_1920.jpg 1920w
+          "
+          sizes="(max-width:690px)100vw, 
+          (max-width:1060px) 50vw ,30vw "
+          src="../src/assets/graffiti/graffiti_640.jpg"
+          alt="project work"
+        />
+
+        <div class="card_description">
+          <div class="container">
+            <h3>Vintage car</h3>
+            <div class="card_imgs">
+              <img src="../src/assets/github.svg" alt="" />
+              <img src="../src/assets/linkedin.svg" alt="" />
+              <img src="../src/assets/fb.svg" alt="" />
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi?
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          srcset="
+            ../src/assets/project/project_640.jpg   640w,
+            ../src/assets/project/project_1280.jpg 1280w,
+            ../src/assets/project/project_1920.jpg 1920w
+          "
+          sizes="(max-width:690px)100vw, 
+                (max-width:1060px) 50vw ,30vw "
+          src="../src/assets/ceo_img/ceo_640.jpg"
+          alt="project work"
+        />
+
+        <div class="card_description">
+          <div class="container">
+            <h3>Work hard project</h3>
+            <div class="card_imgs">
+              <img src="../src/assets/github.svg" alt="" />
+              <img src="../src/assets/linkedin.svg" alt="" />
+              <img src="../src/assets/fb.svg" alt="" />
+            </div>
+          </div>
+          <p>
+            Project I developted since I started learning full stack
+            development.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          srcset="
+            ../src/assets/airbus/airbus_640.jpg   640w,
+            ../src/assets/airbus/airbus_1280.jpg 1280w,
+            ../src/assets/airbus/airbus_1920.jpg 1920w
+          "
+          sizes="(max-width:690px)100vw, 
+          (max-width:1060px) 50vw ,30vw "
+          src="../src/assets/airbus/airbus_640.jpg"
+          alt="project work"
+        />
+
+        <div class="card_description">
+          <div class="container">
+            <h3>High into the sky</h3>
+            <div class="card_imgs">
+              <img src="../src/assets/github.svg" alt="" />
+              <img src="../src/assets/linkedin.svg" alt="" />
+              <img src="../src/assets/fb.svg" alt="" />
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
     </main>
+    <footer id="contact">
+      <div class="footer_container">
+        <div class="footer_content">
+          <h3>Contact me</h3>
+          <p>
+            Please get in touch if you think our work <br />could be mutually
+            beneficial!
+          </p>
+          <p>
+            3948 Barking Road <br />
+            Barking<br />
+            London
+          </p>
+          <p>2443-3434-2345</p>
+          <p>ashileyberry@gmail.com</p>
+          <div class="svgs">
+            <img src="../src/assets/github.svg" alt="" />
+            <img src="../src/assets/linkedin.svg" alt="" />
+            <img src="../src/assets/fb.svg" alt="" />
+          </div>
+          <button><a href="#about"> Page up</a></button>
+        </div>
+
+        <img
+          srcset="
+            ../src/assets/footerImg/ceoFooter_640.jpg   640w,
+            ../src/assets/footerImg/ceoFooter_1280.jpg 1280w,
+            ../src/assets/footerImg/ceoFooter_1920.jpg 1920w
+          "
+          sizes="(max-width:640px) 100vw, 100vw"
+          src="../src/assets/footerImg/ceoFooter_640.jpg"
+          alt="project work"
+        />
+      </div>
+    </footer>
   </body>
 </html>
